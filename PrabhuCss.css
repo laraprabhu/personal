@@ -1,0 +1,936 @@
+html,body
+{
+margin:0;
+padding:0;
+border: 0;
+height:100%;
+width:100%;
+}
+
+
+
+
+
+#Hname
+{
+position:absolute;
+font-family: 'Quando', serif; 
+font-weight: bold; 
+font-size: 60px;
+width: 100%; 
+margin:0;
+padding:0;
+top:20px; 
+text-align:center;  
+color: #D3D3D3;
+cursor:pointer; 
+}
+
+#UlPictures
+{
+text-align:center;
+list-style:none;
+display:none;
+top:50%;
+position: absolute;
+left:50%;
+width:900px;
+margin-left:-450px;
+margin-right:0px;
+margin-top:0px;
+margin-bottom:0px;
+padding:0px;
+}
+
+#UlPictures li
+{
+display:inline-block;
+background-repeat: no-repeat;
+background-position:center;
+cursor:pointer;
+}
+
+#UlPictures li:hover
+{
+opacity:0.5;
+}
+
+#LiSkills
+{
+height:130px;
+width:130px; 
+background-image: url('Skills.png');
+}
+
+#LiArrow
+{
+height:130px; 
+width:100px; 
+background-image: url('arrow.png');
+}
+
+#LiUpdated
+{
+height:130px; 
+width:130px; 
+background-image: url('refresh.png');
+}
+
+#DivHeader ul
+{
+position:absolute;
+top:130px;
+font-family: 'Quando', serif;
+font-weight: bold;
+text-transform:uppercase;
+font-size:15px;
+list-style:none;
+margin-left:-45px;
+margin-right:0px;
+margin-top:0px;
+margin-bottom:0px;
+padding:0px;
+text-align:center;
+width:100%
+}
+
+#DivHeader ul li
+{
+cursor:pointer;
+display:inline;
+margin-left:60px;
+}
+
+
+#DivHeader ul li:hover
+{
+color:white;
+}
+
+#DivWrapper
+{
+position:relative;
+width:100%;
+height:100%;
+overflow:hidden;
+background-color:rgb(236, 236, 236);
+z-index:1;
+}
+
+#DivMain
+{
+position:absolute;
+width:100%;
+height:100%;
+z-index:1;
+}
+
+#DivHeader
+{
+position:fixed;
+width:100%;
+height:150px;
+top:0px;
+background-color: rgba(139, 137, 137, 0.50);
+box-shadow: 0px 3px 25px #000;
+border-bottom-right-radius:30px;
+border-bottom-left-radius:30px;
+z-index:2;
+}
+
+#DivFooter
+{
+position:fixed;
+width:100%;
+height:200px;
+bottom:-170px;
+background-color: rgba(139, 137, 137, 0.70);
+box-shadow: 0px -3px 25px #000;
+border-top-right-radius:30px;
+border-top-left-radius:30px;
+z-index:2;
+}
+
+#DivFooterDataWrapper
+{
+position:relative;
+background-color:#D3D3D3;
+width:100%;
+height:170px;
+margin:0 auto;
+}
+
+#UlFooterMenu
+{
+position:relative;
+width:1000px;
+height: 30px;
+margin:0 auto;
+padding:0px;
+text-align:center;
+list-style:none;
+}
+
+#UlFooterMenu li
+{
+font-family:'Quando', serif;
+font-size:16px;
+font-weight:bold;
+line-height:30px;
+cursor:pointer;
+display:inline;
+padding-left:23px;
+background-position: center left; 
+background-repeat: no-repeat;
+}
+ 
+#UlFooterMenu li:hover
+{
+color:white!important;
+}
+
+#LiContacts
+{
+background-image: url('contact.png'); 
+}
+
+#LiLocation
+{
+margin-left:100px;
+background-image: url('location.png'); 
+}
+
+#LiSocial
+{
+margin-left:110px;
+background-image: url('link.png'); 
+}
+
+#LiResume
+{
+margin-left:110px;
+background-image: url('profile.png'); 
+}
+
+#DivContacts,#DivLocation,#DivSocial,#DivResume
+{
+top:0;
+left:50%; 
+margin-left:-400px; 
+position:absolute; 
+width:800px; 
+height:170px;
+display:none;
+font-family: 'Quando', serif;
+}
+
+#SpDown
+{
+position:absolute; 
+background:url('down.png'); 
+height:20px; 
+width:20px; 
+top:5px; 
+right:25px;
+display:none;
+border-radius:5px; 
+background-position: center; 
+background-repeat: no-repeat;
+}
+
+#SpDown:hover
+{
+background-color:white;
+}
+
+#DivLogo:hover
+{
+font-weight:bold;
+background-color:#F7BB6D;
+border-color:#5E5E5E;
+}
+
+#DivLogo
+{
+position:relative;
+margin-top:5px;
+display:table;
+width:50px;
+height:50px;
+top:120px;
+border-radius:60px;
+background-color:#D3D3D3;
+margin:0px auto;
+border:5px solid gray;
+cursor:pointer;
+box-shadow: 0px 5px 25px #000;
+}
+
+#DivLetter
+{
+font-family: 'Quando', serif;
+font-size:30px;
+display:table-cell;
+vertical-align: middle;
+text-align:center;
+cursor:pointer;
+}
+
+#DivSkillMeter
+{
+position:relative;
+margin:0 auto;
+top:55%;
+margin-top:-100px;
+height:200px;
+width:100px;
+display:none;
+border:1px solid #000;
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+box-shadow: 0px 5px 20px #000;
+}
+
+#DivSkillBar
+{
+position:absolute;
+left:50%;
+margin-left:-25px;
+bottom:20px;
+max-height:180px;
+min-height:10px;
+width:50px;
+height:10px;
+background-color:#D3D3D3;
+
+}
+
+#DivButton
+{
+position:absolute;
+text-align:center;
+bottom:0;
+width:100px;
+height:20px;
+cursor:pointer;
+background-color:gray;
+}
+
+#DivButton:Hover
+{
+background-color:#F7BB6D;
+}
+
+#SpHold
+{
+color:#000;
+font-family: 'Quando', serif;
+font-size:15px;
+font-weight:bold;
+position:relative;
+line-height:21px;
+}
+
+#SpData
+{
+position:absolute; 
+color:white; 
+left:0; 
+right:0; 
+top:40%; 
+font-family:'Quando', serif;
+font-size:200%;
+}
+
+#DivDollar
+{
+position:absolute;
+background-image: url('dollar.png');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+height:50px;
+width:50px;
+z-index:4;
+}
+
+#DivImage
+{
+background-image: url('home.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+position:absolute;
+width:100%; 
+top:0px;
+}
+
+#DivHome
+{
+position:relative;
+margin:0 auto;
+width:100%;
+background-color:#D3D3D3;
+text-align:center;
+}
+
+#DivContacts ul
+{
+position:relative; 
+top:20px; 
+font-size:20px; 
+padding:0px; padding-bottom:10px; 
+border-bottom:1px solid black; 
+text-align:center; 
+width:700px; 
+margin:0 auto; 
+list-style:none;
+text-align:center;
+}
+
+#ParaContacts
+{
+font-size:25px; 
+padding-top:10px;
+text-align:center;
+}
+
+#DivMapData
+{
+position:relative; 
+width:580px; 
+margin:0 auto; 
+height:100%;
+}
+
+#DivMapWrapper
+{
+position:absolute; 
+width:250px; 
+height:140px; 
+left:0; 
+top:15px; 
+overflow:hidden; 
+border-radius:10px;
+box-shadow: 3px 3px 10px #000;
+}
+
+#UlAddressType
+{
+font-weight:bold;
+font-size:18px;
+position:absolute; 
+text-align:left; 
+padding:0; 
+margin:0;
+top:19px; 
+list-style:none; 
+left:280px; 
+width:300px;
+height:25px;
+}
+
+#UlAddressType li
+{
+border-radius:5px;
+padding:2px;
+cursor:pointer;
+}
+
+.LiBorder
+{
+border:2px solid black;
+background-color:#F7BB6D;
+}
+
+#UlAddressType li:hover
+{
+background-color:#F7BB6D!important;
+
+}
+
+#DivMapSlider
+{
+position:absolute; 
+width:600px; 
+height:150px;
+}
+
+#ParaMap
+{
+font-size:16px;
+font-weight:bold;
+position:absolute; 
+width:300px;
+white-space:nowrap; 
+top:44px; 
+left:285px;
+}
+
+#DivMap1,#DivMap2
+{
+float:left; 
+width:250px; 
+height:150px;
+}
+
+#UlSocial
+{
+text-align:center;
+list-style:none;
+height:66px;
+top:52px;
+position: relative;
+width:500px;
+margin:0 auto;
+padding:0px;
+}
+
+#UlSocial li
+{
+cursor:pointer;
+height:65px; 
+width:65px;
+display:inline-block;
+}
+
+#LiFaceBook
+{
+background-image: url('facebook.png');
+}
+
+#LiTwitter
+{
+background-image: url('twitter.png');
+}
+
+#LiStack
+{
+background-image: url('stack.png');
+}
+
+#DivPreLoader
+{
+background-color:#D3D3D3; 
+width:100%; 
+height:100%; 
+position:absolute;
+}
+
+#DivPreLoader img
+{
+position:absolute; 
+width:76px; 
+height:76px; 
+left:50%; 
+top:50%; 
+margin-left:-38px; 
+margin-top:-38px;
+}
+
+#DivContentWrapper
+{
+width:100%; 
+height:100%;
+}
+
+#LiCurrent
+{
+display:inline;
+}
+
+#LiPermanent
+{
+display:inline;
+margin-left:10px;
+}
+
+#DivResume p
+{
+margin:0 auto; 
+top:30px; 
+text-align:center; 
+white-space:nowrap; 
+position:relative; 
+width:450px; 
+font-weight:bold; 
+font-size:17px;
+}
+
+#DivResume a
+{
+position:relative; 
+top:32px; 
+margin:0 auto;  
+text-decoration: none; 
+display:block; 
+width:75px; 
+height:75px; 
+background: url('download.png'); 
+background-position: center; 
+background-repeat: no-repeat; 
+}
+
+#DivBasement  
+{
+position:relative;
+margin:0 auto;
+width:100%;
+font-family: 'Quando', serif;
+font-size:12px;
+font-weight:bold;
+z-index:3;
+}
+
+.Divschool
+{
+position: absolute; 
+background-color:white; 
+width:60px; 
+height:60px; 
+border-radius:30px;
+border: 10px double black;
+}
+
+.ParaHeading
+{
+cursor:pointer;
+line-height:35px; 
+text-align:center;
+}
+
+.ParaEduDetails
+{
+cursor:pointer;
+position:relative; 
+width:130px; 
+text-align:center; 
+display:none;
+}
+
+.DivschoolYoung
+{
+position: absolute; 
+background-color:gray; 
+width:60px; 
+height:60px; 
+border-radius:60px;
+border: 3px solid black;
+}
+
+#DivOverView
+{
+cursor:pointer; 
+position:absolute; 
+display:table; 
+opacity:0.60; 
+width:850px; 
+height:400px; 
+font-size:27px; 
+text-align:center; 
+color:black;
+}
+
+#DivOverView p
+{
+display:table-cell; 
+vertical-align: middle;
+}
+
+#DivCapabilities
+{
+font-family: 'Quando', serif;
+position:relative;
+margin:0 auto;
+width:100%;
+z-index:3;
+}
+
+#DivBackgroundHolder
+{
+position:relative; 
+width:100%; 
+background-color:#B3D71c; 
+overflow:hidden;
+}
+
+#DivCar
+{
+z-index:5; 
+bottom:0; 
+left:450px; 
+width:130px; 
+height:130px; 
+position:absolute; 
+background-image:url('car.png'); 
+background-size: 100%; 
+background-repeat: no-repeat;
+}
+
+#DivKeys
+{
+position:absolute; 
+z-index:5; 
+left:450px; 
+top:50%;
+margin-top:-45px;
+width:300px; 
+height:90px; 
+text-align:center;
+}
+
+#DivKeys Ul
+{
+list-style:none; 
+padding:0px; 
+margin:0px; 
+height:72px;
+}
+
+#DivKeys Ul li
+{
+height:72px; 
+width:72px; 
+display:inline-block; 
+}
+
+#DivKeys h2
+{
+padding:0px; margin:0px;
+}
+
+#DivFrame
+{
+position:absolute; 
+width:30000px; 
+height:100%;
+}
+
+#DivSkillDataBox
+{
+position:absolute; 
+z-index:6; 
+background-color:#f3fafc; 
+margin-top:-100px;  
+width:350px; 
+height:200px; 
+border-radius:4px; 
+box-shadow:2px 2px 10px black;
+}
+
+#DivSkillDataBox h1
+{
+position:relative; 
+left:0; 
+right:0; 
+padding-left:10px; 
+margin-top:10px; 
+margin-bottom:0px;
+}
+
+#ParaSkills1
+{
+text-align:left; 
+margin-top:10px; 
+padding-left: 10px; 
+padding-right: 10px; 
+font-size:13px; 
+height:60px;
+}
+
+#ParaSkills2
+{
+text-align:left;  
+margin-top:10px; 
+padding-left: 10px; 
+font-size:13px;
+}
+
+#DivSkillDataBoxInternal
+{
+position:absolute; 
+width: 100%; 
+height:40px; 
+border-top:3px solid black; 
+bottom:0;
+}
+
+#SpGreen
+{
+position:absolute; 
+border:5px solid #d3d3d3; 
+color:white; 
+font-weight:bold; 
+width:315px; 
+margin-left:10px; 
+line-height:22px; 
+padding-left:5px; 
+margin-right:10px; 
+margin-top:3px; 
+height:22px; 
+background-color:green;
+}
+
+#SpRed
+{
+position:absolute; 
+height:100%; 
+background-color:red; 
+top:0; 
+right:0;
+}
+
+#DivWorks  
+{
+position:relative;
+width:100%;
+z-index:3;
+}
+
+#DivMonitor
+{
+cursor:none;
+position:absolute;
+width: 800px;
+height: 550px;
+left:50%;
+top:50%;
+margin-top: -275px;
+margin-left: -400px;
+background-size: contain;
+background-image:url('monitor.png'); 
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+#DivFingers
+{
+cursor:none;
+position:absolute;
+width:120px;
+height:210px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+
+#DivMonitorDisplay
+{
+cursor:none;
+position:absolute;
+opacity:0.8;
+width: 490px;
+height:275px;
+top:71px;
+left:155px;
+overflow:hidden;
+}
+
+#DivWorksWrapper
+{
+position:absolute;
+width:1960px;
+height:275px;
+background-color:blue;
+}
+
+.DivWorksData
+{
+font-family:'Quando', serif;
+text-align:center;
+position:absolute;
+background-color:#D0C6B1;
+width: 490px;
+height:275px;
+}
+
+.DivFingerUnclicked
+{
+background-image:url('unclicked.png'); 
+}
+
+.DivFingerClicked
+{
+background-image:url('clicked.png'); 
+}
+
+.DivProductLogo
+{
+color:white;
+position:absolute;
+width:100%;
+height:75px;
+top:0px;
+box-shadow:0 4px 10px -2px #000;
+}
+
+.ParaLogo
+{
+padding:0px;
+margin:0px;
+line-height:75px;
+}
+
+.ParaWorkData
+{
+color:black;
+position:absolute;
+top:75px;
+margin:0px;
+padding:10px;
+}
+
+#DivExtras
+{
+font-family:'Quando', serif;
+position:relative;
+margin:0 auto;
+width:100%;
+background-color:#c0c0c0;
+z-index:3;
+}
+
+#DivWaterTap
+{
+width:200px;
+height:200px;
+left:0px;
+position:absolute;
+top:100px;
+background-image:url("waterTap.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 50% 50%; 
+
+z-index:99;
+}
+
+.droplets
+{
+background-color:#C6F9DB;
+border-radius:999px;
+width:30px;
+height:30px;
+position:absolute;
+z-index:98;
+}
+
+.DivDroplet1
+{
+color:white;
+text-align:center;
+}
+
+.previous,.next
+{
+text-align:center;
+cursor:pointer;
+border-radius: 3px;
+line-height : 20px;
+box-shadow:2px 2px 10px black;
+}
+
+.previous:hover,.next:hover
+{
+background-color:orange;
+}
