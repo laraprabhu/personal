@@ -60,12 +60,12 @@ $(document).ready(
 
 	//-------For Map
 
-		var map1 = new GMap2(document.getElementById('DivMap1'));
-		var map2 = new GMap2(document.getElementById('DivMap2'));
-        	var xLoc1 = new GLatLng(9.627378,77.868641);
-		var xLoc2 = new GLatLng(8.776471,77.619947);
-        	map1.setCenter(xLoc2, 11);
-		map2.setCenter(xLoc1, 11);
+// 		var map1 = new GMap2(document.getElementById('DivMap1'));
+// 		var map2 = new GMap2(document.getElementById('DivMap2'));
+//         	var xLoc1 = new GLatLng(9.627378,77.868641);
+// 		var xLoc2 = new GLatLng(8.776471,77.619947);
+//         	map1.setCenter(xLoc2, 11);
+// 		map2.setCenter(xLoc1, 11);
 		
 		
        
